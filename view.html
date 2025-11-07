@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.2px 'Helvetica Neue'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Экскурсия&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="js/pannellum.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div id="panorama" style="width:100%; height:100vh;"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;script src="js/pannellum.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">var viewer = pannellum.viewer('panorama', {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>default: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>firstScene: 'lobby'</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sceneFadeDuration: 1000</p>
+<p class="p1"><span class="Apple-converted-space">    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">    </span>scenes: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>«lobby»: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title: «Прихожая»,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>panorama: "images/lobby.jpg",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>hotSpots: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{pitch: 0, yaw: 30, type: "scene", text: "СУ", sceneId: "toilet"},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{pitch: 0, yaw: -30, type: "scene", text: "Спальня", sceneId: "bedroom"}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"toilet": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title: "СУ",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>panorama: "images/toilet.jpg",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>hotSpots: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{pitch: 0, yaw: -60, type: "scene", text: "Прихожая", sceneId: "lobby"}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"bedroom": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title: "Спальня",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>panorama: "images/bedroom.jpg",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>hotSpots: [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{pitch: 0, yaw: 60, type: "scene", text: "Прихожая", sceneId: "lobby"}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
